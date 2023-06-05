@@ -415,8 +415,14 @@
       </div>
     </div>
   </footer>
-  <div class="window-extra">
-    <div class="modal-window"></div>
+  <div data-modal class="window-extra is-hidden">
+    <div class="modal-window">
+      <button type="button" data-modal-close class="button-window">
+        <svg width="8" height="8" class="cross">
+          <use href="./images"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <script src="./js/modal.js">
   </script>
