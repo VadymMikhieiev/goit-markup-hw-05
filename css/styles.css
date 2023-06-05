@@ -16,20 +16,6 @@
 a {text-decoration: none;
 }
 
-/*
-.hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;}
-*/
-
 .menu-list {font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -269,7 +255,9 @@ gap: 40px;}
 
 .dodatok {padding: 32px 16px;
     border: 1px solid #e7e9fc; 
-    border-top: none;}
+    border-top: none;
+    position: relative;
+    overflow: hidden;}
 
           /* END OF SECOND PART PORTFOLIO*/
 
@@ -566,11 +554,8 @@ img {display: block;}
 
 .cross {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.pictures-in-portfolio {position: relative;
-    overflow: hidden;
-}
 
-.tekst-sverhu {position: absolute;
+.overlay {position: absolute;
     top: 0;
     font-size: 16px;
     line-height: 1.5;
