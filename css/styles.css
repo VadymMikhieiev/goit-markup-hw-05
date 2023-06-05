@@ -48,7 +48,7 @@ a {text-decoration: none;
 .menu-link:hover {color: #404BBF;}
 .menu-link:focus {color: #404BBF;}
 
-.button-portfolio:hover {color: #404bbf}
+
 .link:focus {color: #404bbf}
 
 body {font-family: 'Roboto', sans-serif;
@@ -189,7 +189,9 @@ body {font-family: 'Roboto', sans-serif;
     color: var(--buton-color);
     background-color: var(--buton-background-color);
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .button-portfolio:hover {color: #FFFFFF}
 .button-portfolio:focus {color: #FFFFFF}
@@ -504,7 +506,11 @@ img {display: block;}
 .button-portfolio:hover {box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 .button-portfolio:focus {box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
-.extra-link {display: block;}
+.extra-link {display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.extra-link.hover {transform: translateY(0%);}
+.extra-link.hover {transform: translateY(0%);}
 
 .extra-link:hover {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
 .extra-link:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);}
@@ -560,6 +566,22 @@ img {display: block;}
 
 .cross {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
+.pictures-in-portfolio {position: relative;
+    overflow: hidden;
+}
+
+.tekst-sverhu {position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; 
+    color: var(--buton-background-color:);
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%; 
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);}
   
 
 
