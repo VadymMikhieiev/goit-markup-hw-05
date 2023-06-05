@@ -321,7 +321,7 @@ img {display: block;}
 
 .logo-link-unik {margin-right: 76px;}
 
-.logo-link-unik::after {content: '';
+.posulanya-portfolio::after {content: '';
     position: absolute;
     left: 0;
     bottom: -1px;
